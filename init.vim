@@ -1,6 +1,6 @@
 set number
-set relativenumber
 set autoindent
+set relativenumber
 set tabstop=4
 set shiftwidth=4
 set mouse=a
@@ -11,11 +11,12 @@ call plug#begin()
 	Plug 'https://github.com/preservim/nerdtree'
 	Plug 'tpope/vim-commentary'
 	Plug 'vim-airline/vim-airline'
-	Plug 'ap/vim-css-color'
-	Plug 'ryanoasis/vim-devicons'
+	Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
+
+colorscheme molokai
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
